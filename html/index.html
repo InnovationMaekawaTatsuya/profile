@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+    <header id="header" class="wrapper">
+        <h1 class="site-title"><a href="#"><img src="../img/logo.svg" alt="Profile"></a></h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#bicycle">Bicycle</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="main-visual">
+            <img src="../img/mainvisual.jpg" alt="メインイメージ">
+        </div>
+        <section id="about" class="wrapper">
+            <h2 class="section-title">About</h2>
+            <div class="flex">
+                <!-- 〇〇areaと分けた方が画像と文章の領域を判断しやすい為、「img-area」「text-area」を採用 -->
+                <div class="img-area">
+                    <img src="../img/about.jpg" alt="自己紹介アイコン">
+                </div>
+                <div class="text-area">
+                    <!-- 不採用　他の要素と特別な違いはない為p要素が相応しいと思う
+                    <h3 class="name">KAKERU MIYAICHI</h3> -->
+                    <p class="name">KAKERU MIYAUCHI</p>
+                    <p class="description">
+                        テキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="bicycle" class="wrapper">
+            <h2 class="section-title">Bicycle</h2>
+            <div class="flex">
+                <ul class="list">
+                    <!-- 〇〇areaと分けた方が画像と文章の領域を判断しやすい為、「img-area」「text-area」を採用 -->
+                    <li>
+                        <div class="img-area">
+                            <img src="../img/bicycle1.jpg" alt="自転車のイメージ１">
+                        </div>
+                        <div class="text-area">
+                            <p class="title">タイトルタイトル</p>
+                            <p class="description">テキストテキストテキスト</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-area">
+                            <img src="../img/bicycle2.jpg" alt="自転車のイメージ２">
+                        </div>
+                        <div class="text-area">
+                            <p class="title">タイトルタイトル</p>
+                            <p class="description">テキストテキストテキスト</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-area">
+                            <img src="../img/bicycle3.jpg" alt="自転車のイメージ３">
+                        </div>
+                        <div class="text-area">
+                            <p class="title">タイトルタイトル</p>
+                            <p class="description">テキストテキストテキスト</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <p class="copyright">&copy; 2020 Profile</p>
+    </footer>
+</body>
+</html>
