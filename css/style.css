@@ -12,7 +12,6 @@ ul {
 .wrapper {
     max-width  : 960px;
     margin     : 0 auto 6.25rem auto;
-    padding    : 0 4%;
     text-align : center;
 }
 .flex {
