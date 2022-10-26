@@ -1,0 +1,129 @@
+/* 設定 */
+body {
+    font-size : 0.9rem;
+}
+a {
+    text-decoration : none;
+    color           : black;
+}
+ul {
+    list-style : none;
+}
+.wrapper {
+    max-width  : 960px;
+    margin     : 0 auto 6.25rem auto;
+    text-align : center;
+}
+.flex {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+}
+.site-title {
+    width       : 120px;
+    padding     : 0.625rem 0;
+    line-height : 1px;
+}
+.section-title {
+    display       : inline-block;
+    text-align    : center;
+    margin-bottom : 3.75rem;
+    border-bottom : solid 1px #383e45;
+    font-size     : 2rem;
+}
+
+/*------------------------------------------
+    PC 
+------------------------------------------*/
+/* ヘッダー */
+#header {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    margin-bottom   : 0;
+}
+#header .site-title img {
+    width : 100%;
+}
+#header .menu {
+    display : flex;
+    gap     : 30px;
+}
+
+/* メイン */
+#main-visual {
+    max-width     : 100%;
+    margin-bottom : 5rem;
+}
+#main-visual img {
+    width      : 100%;
+    height     : 600px;
+    object-fit : cover;
+}
+#about .flex .img-area {
+    width         : 100px;
+    height        : 100px;
+    margin-right  : 1.875rem;
+}
+#about .flex .img-area img {
+    width         : 100%;
+    height        : 100%;
+    border-radius : 50%;
+}
+#about .flex .text-area .name {
+    text-align    : start;
+    margin        : 0.625rem 0;
+    font-size     : 1rem;
+    font-weight   : 700;
+}
+#bicycle .list {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+}
+#bicycle .list li {
+    width : 32%;
+}
+#bicycle .list li .img-area img {
+    max-width : 100%;
+}
+#bicycle .list li .text-area .title {
+    margin      : 0.625rem 0;
+    font-size   : 1rem;
+    font-weight : 700;
+}
+#footer {
+    text-align : center;
+    padding    : 0.625rem 0;
+}
+#footer .copyright {
+    font-size  : 0.5rem;
+}
+
+
+/*--------------------------------------------
+    SP 
+--------------------------------------------*/
+@media screen and (max-width: 600px) {
+    /* 設定 */
+    .flex {
+        flex-direction : column;
+    }
+    /* メイン */
+    #main-visual img {
+        height : calc(100vh - 60px);
+    }
+    #about .flex .img-area {
+        margin-right  : 0;
+    }
+    #about .flex .text-area .description {
+        text-align    : start;
+    }
+    #bicycle .list {
+        flex-direction : column;
+    }
+    #bicycle .list li {
+        width         : 100%;
+        margin-bottom : 1.875rem;
+    }
+}
